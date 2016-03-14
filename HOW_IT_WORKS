@@ -1,0 +1,17 @@
+Brief how to works:
+
+- Ratty receiver saves h5 files onto http://rfimonitor.kat.ac.za/rfi_data/ server
+
+- RFI_diplay.py downloads data from server, process and saves plots as png files.  This is run from crontab.
+    crontab entry: 4 * * * * /usr/bin/python /home/reverb-chamber/Desktop/Ratty/
+
+- grive (google drive client linux) uploads /home/reverb-chamber/Desktop/Ratty/ contents to google drive account.
+    Google drive account details: user: ska.reverb@gmail.com for password please contact Carel or Siya or Lotter
+    crontab entry: 13 * * * * grive -p /home/reverb-chamber/Desktop/Ratty/
+
+- Google site: https://sites.google.com/site/skarfidisplay/home/overview displays the plots.  In order to share the site, click the share button 
+top right then add the email address and select the permissions.  Sharing can be done by: Carel, Siya, Rob and Lotter
+
+####################################################################################################################################
+
+
