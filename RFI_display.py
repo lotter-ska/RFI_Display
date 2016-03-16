@@ -88,7 +88,7 @@ def h5_proc(date_in,date_in1):
     az.set_axis_bgcolor((0, 0, 0))
     plt.savefig('/home/reverb-chamber/Desktop/Ratty/minmax.png',dpi=100)
 #####################
-#    os.remove(filename)
+    os.remove(filename)  #comment line out if used in Windows
     return f,sp
     
 
